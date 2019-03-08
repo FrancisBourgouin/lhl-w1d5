@@ -40,6 +40,9 @@ describe('Testing if the internal functions inputChecksOut & unitConversion are 
 
   describe('Testing different values for unitConversion', function() {
     it('Sanity checking (should return 0 if I have 0 person in a 0 sqm building... right ?) ', function() {
+        real_estate.amountOfFloors = 0
+        real_estate.amountOfPeople = 0
+        real_estate.totalSurface = 0
         var spp = real_estate.surfacePerPerson('sqm')
         expect(spp).to.equal(0);
     });
@@ -63,6 +66,9 @@ describe('Testing if the internal functions inputChecksOut & unitConversion are 
 
   describe('Testing minimumPopulationPerFloor', function() {
     it('Sanity check (should return 0 if I have 0 person in a 0 floor building... right ?)', function() {
+        real_estate.amountOfFloors = 0
+        real_estate.amountOfPeople = 0
+        real_estate.totalSurface = 0
         var mppf = real_estate.minimumPopulationPerFloor()
         expect(mppf).to.equal(0);
     });
@@ -77,6 +83,9 @@ describe('Testing if the internal functions inputChecksOut & unitConversion are 
 
   describe('Testing maximumPopulationPerFloor', function() {
     it('Sanity check (should return 0 if I have 0 person in a 0 floor building... right ?)', function() {
+        real_estate.amountOfFloors = 0
+        real_estate.amountOfPeople = 0
+        real_estate.totalSurface = 0
         var mppf = real_estate.minimumPopulationPerFloor()
         expect(mppf).to.equal(0);
     });
