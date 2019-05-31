@@ -1,0 +1,23 @@
+{
+  "name": "lhl-w1d5",
+  "version": "1.0.0",
+  "description": "Notes and code for lecture of week 1 day 5",
+  "main": "real_estate_fake_project.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node real_estate_fake_project.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancisBourgouin/lhl-w1d5.git"
+  },
+  "author": "Francis Bourgouin & Dominic Tremblay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrancisBourgouin/lhl-w1d5/issues"
+  },
+  "homepage": "https://github.com/FrancisBourgouin/lhl-w1d5#readme",
+  "dependencies": {
+    "chalk": "~2.3.1"
+  }
+}

@@ -67,8 +67,8 @@ function surfacePerPerson(unit){
     //  }
 
     //Or ?
-
-    return Number.isInteger(input)
+    
+    return (Number.isInteger(input) && input > 0)
  }
 
  function unitConversion(unit){
